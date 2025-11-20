@@ -2,76 +2,94 @@ name: Update GitHub Profile Stats
 
 on:
   schedule:
-    # Run every Sunday at midnight UTC
-    - cron: '0 0 * * 0'
-  workflow_dispatch: # Manual trigger
+    - cron: '0 0 * * 0'  # Every Sunday at midnight UTC
+  workflow_dispatch:
 
 jobs:
   update-stats:
     runs-on: ubuntu-latest
-    permissions:
-      contents: write
     
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
       
-      - name: Generate GitHub Stats
-        uses: actions/github-script@v6
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
         with:
-          script: |
-            const username = 'PrathmeshKushwaha';
-            
-            // Fetch all public repos
-            const repos = await github.paginate(github.rest.repos.listForUser, {
-              username: username,
-              type: 'public',
-              per_page: 100
-            });
-            
-            // Calculate stats
-            const totalRepos = repos.length;
-            const totalStars = repos.reduce((sum, repo) => sum + repo.stargazers_count, 0);
-            
-            // Count languages
-            const languageCounts = {};
-            for (const repo of repos) {
-              if (repo.language) {
-                languageCounts[repo.language] = (languageCounts[repo.language] || 0) + 1;
-              }
+          node-version: '18'
+      
+      - name: Generate stats
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          cat > generate_stats.js << 'EOF'
+          const https = require('https');
+          const fs = require('fs');
+          
+          const username = 'PrathmeshKushwaha';
+          
+          const options = {
+            hostname: 'api.github.com',
+            path: `/users/${username}/repos?type=public&per_page=100`,
+            headers: {
+              'User-Agent': 'GitHub-Stats-Action',
+              'Authorization': `token ${process.env.GITHUB_TOKEN}`
             }
-            
-            // Sort languages by frequency
-            const topLanguages = Object.entries(languageCounts)
-              .sort((a, b) => b[1] - a[1])
-              .slice(0, 5)
-              .map(([lang, count]) => `${lang} (${count} repos)`)
-              .join(', ');
-            
-            // Create markdown content
-            const content = `# GitHub Profile Statistics
-            
-            **Last Updated:** ${new Date().toUTCString()}
-            
-            ## Overview
-            
-            - 📦 **Public Repositories:** ${totalRepos}
-            - ⭐ **Total Stars:** ${totalStars}
-            - 🔝 **Top Languages:** ${topLanguages || 'No language data'}
-            
-            ---
-            
-            *This file is automatically updated weekly by GitHub Actions*
-            `;
-            
-            // Write to file
-            const fs = require('fs');
-            fs.writeFileSync('GITHUB_PROFILE_STATS.md', content);
-            
-            console.log('Stats generated successfully');
+          };
+          
+          https.get(options, (res) => {
+            let data = '';
+            res.on('data', chunk => data += chunk);
+            res.on('end', () => {
+              const repos = JSON.parse(data);
+              const totalRepos = repos.length;
+              const totalStars = repos.reduce((sum, r) => sum + r.stargazers_count, 0);
+              
+              const languageCounts = {};
+              repos.forEach(repo => {
+                if (repo.language) {
+                  languageCounts[repo.language] = (languageCounts[repo.language] || 0) + 1;
+                }
+              });
+              
+              const topLanguages = Object.entries(languageCounts)
+                .sort((a, b) => b[1] - a[1])
+                .slice(0, 5)
+                .map(([lang, count]) => `${lang} (${count} repos)`)
+                .join(', ');
+              
+              const content = `# GitHub Profile Statistics
+
+          **Last Updated:** ${new Date().toUTCString()}
+
+          ## Overview
+
+          - 📦 **Public Repositories:** ${totalRepos}
+          - ⭐ **Total Stars:** ${totalStars}
+          - 🔝 **Top Languages:** ${topLanguages || 'No language data'}
+
+          ---
+
+          *This file is automatically updated weekly by GitHub Actions*
+          `;
+              
+              fs.writeFileSync('GITHUB_PROFILE_STATS.md', content);
+              console.log('Stats updated successfully');
+            });
+          }).on('error', (err) => {
+            console.error('Error:', err.message);
+            process.exit(1);
+          });
+          EOF
+          
+          node generate_stats.js
       
       - name: Commit and push if changed
         run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add GITHUB_PROFILE_STATS.md
+          git diff --quiet && git diff --staged --quiet || (git commit -m "📊 Update GitHub profile stats" && git push)
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
           git add GITHUB_PROFILE_STATS.md
