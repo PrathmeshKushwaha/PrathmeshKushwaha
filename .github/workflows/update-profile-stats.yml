@@ -1,61 +1,78 @@
-name: Update profile stats
-
+name: Update GitHub Profile Stats
 
 on:
-schedule:
-- cron: '0 5 * * 1' # every Monday 05:00 UTC (adjust if needed)
-workflow_dispatch: {}
-push: {}
-
+  schedule:
+    # Run every Sunday at midnight UTC
+    - cron: '0 0 * * 0'
+  workflow_dispatch: # Manual trigger
 
 jobs:
-update-stats:
-runs-on: ubuntu-latest
-
-
-steps:
-- name: Checkout repository
-uses: actions/checkout@v4
-
-
-- name: Generate stats file
-uses: actions/github-script@v6
-with:
-script: |
-const fs = require('fs');
-const username = process.env.GITHUB_REPOSITORY.split('/')[0];
-// Fetch up to 300 repos (paginated)
-const repos = await github.paginate(github.rest.repos.listForUser, { username, per_page: 100 });
-
-
-let totalStars = 0;
-const languageCount = {};
-for (const r of repos) {
-totalStars += r.stargazers_count || 0;
-if (r.language) languageCount[r.language] = (languageCount[r.language] || 0) + 1;
-}
-
-
-const topLanguages = Object.entries(languageCount)
-.sort((a,b) => b[1] - a[1])
-.slice(0,5)
-.map(x => x[0])
-.join(', ') || 'N/A';
-
-
-const stats = `<!-- AUTO-GENERATED: Do not edit directly -->\n` +
-`**Top languages:** ${topLanguages}\n\n` +
-`**Public repos scanned:** ${repos.length}\n` +
-`**Total stars:** ${totalStars}\n` +
-`**Last updated:** ${new Date().toISOString()}\n`;
-
-
-fs.writeFileSync('GITHUB_PROFILE_STATS.md', stats);
-
-
-- name: Commit and push if changed
-uses: stefanzweifel/git-auto-commit-action@v4
-with:
-commit_message: 'chore: update profile stats'
-commit_user_name: 'github-actions'
-commit_user_email: '41898282+github-actions[bot]@users.noreply.github.com'
+  update-stats:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+      
+      - name: Generate GitHub Stats
+        uses: actions/github-script@v6
+        with:
+          script: |
+            const username = 'PrathmeshKushwaha';
+            
+            // Fetch all public repos
+            const repos = await github.paginate(github.rest.repos.listForUser, {
+              username: username,
+              type: 'public',
+              per_page: 100
+            });
+            
+            // Calculate stats
+            const totalRepos = repos.length;
+            const totalStars = repos.reduce((sum, repo) => sum + repo.stargazers_count, 0);
+            
+            // Count languages
+            const languageCounts = {};
+            for (const repo of repos) {
+              if (repo.language) {
+                languageCounts[repo.language] = (languageCounts[repo.language] || 0) + 1;
+              }
+            }
+            
+            // Sort languages by frequency
+            const topLanguages = Object.entries(languageCounts)
+              .sort((a, b) => b[1] - a[1])
+              .slice(0, 5)
+              .map(([lang, count]) => `${lang} (${count} repos)`)
+              .join(', ');
+            
+            // Create markdown content
+            const content = `# GitHub Profile Statistics
+            
+            **Last Updated:** ${new Date().toUTCString()}
+            
+            ## Overview
+            
+            - 📦 **Public Repositories:** ${totalRepos}
+            - ⭐ **Total Stars:** ${totalStars}
+            - 🔝 **Top Languages:** ${topLanguages || 'No language data'}
+            
+            ---
+            
+            *This file is automatically updated weekly by GitHub Actions*
+            `;
+            
+            // Write to file
+            const fs = require('fs');
+            fs.writeFileSync('GITHUB_PROFILE_STATS.md', content);
+            
+            console.log('Stats generated successfully');
+      
+      - name: Commit and push if changed
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add GITHUB_PROFILE_STATS.md
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Update GitHub profile stats" && git push)
