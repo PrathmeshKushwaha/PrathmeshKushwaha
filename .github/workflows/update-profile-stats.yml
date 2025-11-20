@@ -1,0 +1,61 @@
+name: Update profile stats
+
+
+on:
+schedule:
+- cron: '0 5 * * 1' # every Monday 05:00 UTC (adjust if needed)
+workflow_dispatch: {}
+push: {}
+
+
+jobs:
+update-stats:
+runs-on: ubuntu-latest
+
+
+steps:
+- name: Checkout repository
+uses: actions/checkout@v4
+
+
+- name: Generate stats file
+uses: actions/github-script@v6
+with:
+script: |
+const fs = require('fs');
+const username = process.env.GITHUB_REPOSITORY.split('/')[0];
+// Fetch up to 300 repos (paginated)
+const repos = await github.paginate(github.rest.repos.listForUser, { username, per_page: 100 });
+
+
+let totalStars = 0;
+const languageCount = {};
+for (const r of repos) {
+totalStars += r.stargazers_count || 0;
+if (r.language) languageCount[r.language] = (languageCount[r.language] || 0) + 1;
+}
+
+
+const topLanguages = Object.entries(languageCount)
+.sort((a,b) => b[1] - a[1])
+.slice(0,5)
+.map(x => x[0])
+.join(', ') || 'N/A';
+
+
+const stats = `<!-- AUTO-GENERATED: Do not edit directly -->\n` +
+`**Top languages:** ${topLanguages}\n\n` +
+`**Public repos scanned:** ${repos.length}\n` +
+`**Total stars:** ${totalStars}\n` +
+`**Last updated:** ${new Date().toISOString()}\n`;
+
+
+fs.writeFileSync('GITHUB_PROFILE_STATS.md', stats);
+
+
+- name: Commit and push if changed
+uses: stefanzweifel/git-auto-commit-action@v4
+with:
+commit_message: 'chore: update profile stats'
+commit_user_name: 'github-actions'
+commit_user_email: '41898282+github-actions[bot]@users.noreply.github.com'
