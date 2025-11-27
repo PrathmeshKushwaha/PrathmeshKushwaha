@@ -30,7 +30,7 @@ jobs:
           
           const options = {
             hostname: 'api.github.com',
-            path: `/users/${username}/repos?type=public&per_page=100`,
+            path: `/users/PrathmeshKushwaha/repos?type=public&per_page=100`,
             headers: {
               'User-Agent': 'GitHub-Stats-Action',
               'Authorization': `token ${process.env.GITHUB_TOKEN}`
