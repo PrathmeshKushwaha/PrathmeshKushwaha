@@ -1,96 +1,83 @@
-# Hi, I'm Prathmesh Kushwaha 👋
+# 👋 Prathmesh Kushwaha
 
-**B.Tech CSE Student | Data Engineering & Machine Learning Enthusiast**
+**Student · Data Engineer & ML Developer · Building intelligent pipelines on Azure**
 
-I build end-to-end data solutions—from wrangling messy datasets to deploying ML models in production. Currently pursuing Computer Science Engineering with hands-on experience in **cloud-deployed ML systems**, **data pipelines**, and **analytics dashboards**.
-
-🎯 **Looking for:** Data Engineering / Data Science / ML Engineering internships and entry-level roles
-
----
-
-## 🧑‍💻 About Me
-
-- 🎓 B.Tech in Computer Science & Engineering (CGPA: 8.03) | Lovely Professional University
-- 📊 Built and deployed ML models processing 100K+ records using AWS Lambda and MongoDB Atlas
-- 🏆 Top 10 finish in university-level hackathon (Coding Blocks) | Microsoft Azure DP-900 Certified
-- 🌱 Currently deepening expertise in data engineering pipelines and MLOps practices
+[![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)](https://python.org)
+[![Azure](https://img.shields.io/badge/Azure-0078D4?style=flat&logo=microsoftazure&logoColor=white)](https://azure.microsoft.com)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=flat&logo=linkedin&logoColor=white)](https://linkedin.com/in/REPLACE_ME_prathmeshkushwaha)
+[![Email](https://img.shields.io/badge/Email-D14836?style=flat&logo=gmail&logoColor=white)](mailto:REPLACE_ME@example.com)
 
 ---
 
-## 🛠️ Tech Stack
+## 🚀 Current Focus
 
-**Languages**  
-Python | SQL
+Student · Building data pipelines and ML models · Open to data engineering & ML internships
 
-**Data & ML**  
-Pandas | NumPy | Scikit-learn | Matplotlib | Seaborn
+## 💡 About Me
 
-**Databases**  
-MySQL | MongoDB (Atlas)
+Data engineering student specializing in cloud-native pipelines, machine learning deployment, and business intelligence. I build end-to-end solutions from raw data to production-ready models and dashboards. Seeking roles in data engineering, ML ops, and analytics engineering where I can deliver scalable, data-driven systems.
 
-**Cloud & Deployment**  
-AWS (Lambda, API Gateway) | Azure
+## 🛠️ Featured Projects
 
-**Visualization & Tools**  
-Power BI | Plotly Dash | Excel
+### 🩸 [Blood Test Disease Prediction](./blood-test-ml)
+- **Purpose:** Predict multiple diseases from routine blood parameters using ensemble ML
+- **Stack:** Python · Pandas · Scikit-learn · XGBoost · Public datasets + hospital reports
+- **Impact:** Multi-disease classification models with optimized XGBoost achieving best performance
 
-**Frameworks & Others**  
-Flask | Tkinter | Joblib
+### ☁️ [Azure Document Extraction Pipeline](./azure-doc-pipeline)
+- **Purpose:** Automated extraction and structuring of unstructured documents at scale
+- **Stack:** Azure Functions · Blob Storage · Form Recognizer · Azure SQL · Python
+- **Impact:** End-to-end serverless pipeline transforming raw docs into queryable structured data
 
----
+### 📊 [Netflix Analytics Dashboard](./netflix-powerbi)
+- **Purpose:** Interactive BI dashboard for content catalogue insights and trend analysis
+- **Stack:** Power BI · Power Query · DAX · Data modeling
+- **Impact:** Drill-down visualizations enabling data-driven content strategy decisions
 
-## 🚀 Featured Projects
+### 💼 Business Analyst Internship Projects
+- **Purpose:** Delivered business reporting and data optimization for operational insights
+- **Stack:** Excel · Power BI · SQL · Python · Data cleaning pipelines
+- **Impact:** Streamlined reporting workflows and improved decision-making through automated dashboards
 
-### [Student Performance Predictor](https://github.com/PrathmeshKushwaha/student-performance-predictor)
-Built a full-stack ML solution to predict student CGPA based on academic and behavioral features.
-- Trained **Random Forest Regressor** on 20K+ records with multiple feature engineering steps
-- Deployed web app with **Flask** backend and real-time prediction API
-- Integrated **MongoDB Atlas** for scalable data storage and retrieval
-- **Impact:** Enables educators to identify at-risk students early for intervention
+## 🔧 Tech Stack
 
-**Tech:** Python, Scikit-learn, MongoDB Atlas, Flask, HTML/CSS
+**Languages:** ![Python](https://img.shields.io/badge/-Python-3776AB?style=flat&logo=python&logoColor=white) ![SQL](https://img.shields.io/badge/-SQL-4479A1?style=flat&logo=postgresql&logoColor=white) ![DAX](https://img.shields.io/badge/-DAX-F2C811?style=flat&logo=powerbi&logoColor=black)
 
-### [Disease Prediction System](https://github.com/PrathmeshKushwaha/disease-prediction-system)
-ML-powered healthcare prediction system analyzing patient vitals to forecast disease risk.
-- Processed and trained on **100K patient records** using Pandas and Scikit-learn
-- Reduced inference time by deploying model via **AWS Lambda + API Gateway**
-- Achieved real-time prediction response (<200ms) using serverless architecture
-- **Impact:** Demonstrates production-grade ML deployment and cloud engineering skills
+**Data & ML:** ![Pandas](https://img.shields.io/badge/-Pandas-150458?style=flat&logo=pandas&logoColor=white) ![Scikit-learn](https://img.shields.io/badge/-Scikit--learn-F7931E?style=flat&logo=scikitlearn&logoColor=white) ![XGBoost](https://img.shields.io/badge/-XGBoost-337AB7?style=flat) ![Jupyter](https://img.shields.io/badge/-Jupyter-F37626?style=flat&logo=jupyter&logoColor=white)
 
-**Tech:** Python, Pandas, Scikit-learn, AWS Lambda, API Gateway, Joblib
+**Cloud & Data Engineering:** ![Azure](https://img.shields.io/badge/-Azure-0078D4?style=flat&logo=microsoftazure&logoColor=white) ![Azure Functions](https://img.shields.io/badge/-Functions-0062AD?style=flat&logo=azurefunctions&logoColor=white) ![Blob Storage](https://img.shields.io/badge/-Blob%20Storage-0078D4?style=flat) ![Azure SQL](https://img.shields.io/badge/-Azure%20SQL-0078D4?style=flat)
 
-### [Netflix Content Analytics Dashboard](https://github.com/PrathmeshKushwaha/netflix-dashboard)
-Interactive Power BI dashboard analyzing Netflix content trends, ratings, and user preferences.
-- Visualized **9 key content trends** (movies vs. series, genre distribution, rating patterns)
-- Published dashboard on LinkedIn with 500+ views, demonstrating data storytelling skills
-- **Impact:** Shows ability to derive business insights from real-world datasets
+**Tools:** ![Power BI](https://img.shields.io/badge/-Power%20BI-F2C811?style=flat&logo=powerbi&logoColor=black) ![Git](https://img.shields.io/badge/-Git-F05032?style=flat&logo=git&logoColor=white) ![VS Code](https://img.shields.io/badge/-VS%20Code-007ACC?style=flat&logo=visualstudiocode&logoColor=white)
 
-**Tech:** Power BI, Data Visualization
+## 💼 Experience
 
----
+**Business Analyst Intern** — Futurense Technologies (June 2024)  
+End-to-end data cleaning, optimization, and dashboard development for business intelligence reporting
 
-## 🏅 Certifications & Achievements
+## 🏆 Achievements & Certifications
 
-- **Microsoft Azure Data Fundamentals (DP-900)** – Jan 2025
-- **IBM Data Science Professional Certificate** – June 2024
-- **Top 10 Finish** – University Hackathon (Coding Blocks)
-- **Competition Contributor** – Kaggle
-- **Community Recognition** – Healthcare awareness program organizer
+- 🎓 **Microsoft Azure Fundamentals (AZ-900)** — *REPLACE_ME or remove if not obtained*
+- 🏅 **Hackathon Finalist** — *REPLACE_ME_hackathon_name and year*
+- 📈 **CGPA:** *REPLACE_ME_X.XX/10 or remove*
 
----
+## 📚 Currently Learning
+
+Azure data architecture · Production ML deployment · Apache Spark · Advanced SQL optimization
+
+## 📊 GitHub Stats
+
+![Prathmesh's GitHub Stats](https://github-readme-stats.vercel.app/api?username=PrathmeshKushwaha&show_icons=true&theme=radical&hide_border=true&count_private=true)
+
+![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=PrathmeshKushwaha&layout=compact&theme=radical&hide_border=true)
+
+![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=PrathmeshKushwaha&theme=radical&hide_border=true)
 
 ## 📫 Let's Connect
 
-- 📧 Email: prathmshkush@gmail.com
-- 💼 LinkedIn: [Prathmesh Kushwaha](https://www.linkedin.com/in/prathmesh-kushwaha)
-- 📊 Kaggle: Active contributor in data science competitions
+📧 **Email:** REPLACE_ME@example.com  
+💼 **LinkedIn:** [linkedin.com/in/REPLACE_ME_prathmeshkushwaha](https://linkedin.com/in/REPLACE_ME_prathmeshkushwaha)  
+🔗 **Portfolio:** [github.com/PrathmeshKushwaha](https://github.com/PrathmeshKushwaha)
 
 ---
 
-![Prathmesh's GitHub Stats](https://github-readme-stats.vercel.app/api?username=PrathmeshKushwaha&show_icons=true&theme=radical&count_private=true)
-
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=PrathmeshKushwaha&layout=compact&theme=radical)
-
----
-
-*Open to collaborations on data engineering projects, ML pipelines, and cloud deployments. Feel free to reach out!*
+*Open to data engineering and ML internship opportunities · Let's build something impactful together*
