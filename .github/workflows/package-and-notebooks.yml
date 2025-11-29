@@ -1,0 +1,68 @@
+name: Build and Deploy Documentation
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    
+    # Only run if notebooks/ or docs/ directory exists
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+    
+    - name: Set up Python 3.11
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.11'
+    
+    - name: Install dependencies
+      run: |
+        pip install jupyter nbconvert sphinx sphinx-rtd-theme
+    
+    - name: Check for notebooks directory
+      id: check_notebooks
+      run: |
+        if [ -d "notebooks" ]; then echo "exists=true" >> $GITHUB_OUTPUT; fi
+    
+    - name: Convert Jupyter notebooks to HTML
+      if: steps.check_notebooks.outputs.exists == 'true'
+      run: |
+        mkdir -p site
+        for notebook in notebooks/*.ipynb; do
+          jupyter nbconvert --to html "$notebook" --output-dir=site/
+        done
+    
+    - name: Check for Sphinx docs
+      id: check_docs
+      run: |
+        if [ -d "docs" ] && [ -f "docs/conf.py" ]; then echo "exists=true" >> $GITHUB_OUTPUT; fi
+    
+    - name: Build Sphinx documentation
+      if: steps.check_docs.outputs.exists == 'true'
+      run: |
+        cd docs
+        make html
+        cp -r _build/html ../site/
+    
+    - name: Create index if site exists
+      run: |
+        if [ -d "site" ]; then
+          echo "<html><body><h1>Project Documentation</h1><ul>" > site/index.html
+          for file in site/*.html; do
+            filename=$(basename "$file")
+            echo "<li><a href='$filename'>$filename</a></li>" >> site/index.html
+          done
+          echo "</ul></body></html>" >> site/index.html
+        fi
+    
+    - name: Deploy to GitHub Pages
+      if: hashFiles('site/**') != ''
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./site
+        publish_branch: gh-pages
