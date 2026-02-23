@@ -4,8 +4,8 @@
 
 [![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)](https://python.org)
 [![Azure](https://img.shields.io/badge/Azure-0078D4?style=flat&logo=microsoftazure&logoColor=white)](https://azure.microsoft.com)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=flat&logo=linkedin&logoColor=white)](https://linkedin.com/in/REPLACE_ME_prathmeshkushwaha)
-[![Email](https://img.shields.io/badge/Email-D14836?style=flat&logo=gmail&logoColor=white)](mailto:REPLACE_ME@example.com)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=flat&logo=linkedin&logoColor=white)](https://linkedin.com/in/prathmesh-kushwaha)
+[![Email](https://img.shields.io/badge/Email-D14836?style=flat&logo=gmail&logoColor=white)](mailto:prathmshkush@gmail.com)
 
 ---
 
@@ -74,7 +74,7 @@ Azure data architecture · Production ML deployment · Apache Spark · Advanced 
 
 ## 📫 Let's Connect
 
-📧 **Email:** REPLACE_ME@example.com  
+📧 **Email:** prathmshkush@gmail.com 
 💼 **LinkedIn:** [linkedin.com/in/REPLACE_ME_prathmeshkushwaha](https://linkedin.com/in/REPLACE_ME_prathmeshkushwaha)  
 🔗 **Portfolio:** [github.com/PrathmeshKushwaha](https://github.com/PrathmeshKushwaha)
 
