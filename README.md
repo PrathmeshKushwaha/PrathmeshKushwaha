@@ -17,20 +17,34 @@
 
 ---
 
-## <div align="center">📌 Pinned Projects</div>
-<p align="center">
-    <a href="https://github.com/PrathmeshKushwaha/Archvium-RAG">
-        <img src="https://github-readme-stats.vercel.app/api/pin/?username=PrathmeshKushwaha&repo=Archvium-RAG&theme=radical&hide_border=true&include_all_commits=true" alt="Archvium-RAG Card">
-    </a>
-    <a href="https://github.com/PrathmeshKushwaha/ML-models-for-Healthcare">
-        <img src="https://github-readme-stats.vercel.app/api/pin/?username=PrathmeshKushwaha&repo=ML-models-for-Healthcare&theme=radical&hide_border=true&include_all_commits=true" alt="Healthcare Models Card">
-    </a>
-</p>
-<p align="center">
-    <a href="https://yourportfolio.com">
-        <img src="https://img.shields.io/badge/View_Full_Portfolio-1f222e?style=for-the-badge&logo=github&logoColor=white" alt="View Portfolio">
-    </a>
-</p>
+## <div align="center">📌 Featured Projects</div>
+
+<table>
+    <tr>
+        <td width="50%">
+            <h3 align="center">🤖 Archvium-RAG</h3>
+            <p align="center">
+                <img src="https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white" />
+                <img src="https://img.shields.io/badge/LangChain-1C3C3C?style=flat&logo=langchain&logoColor=white" />
+            </p>
+            <p>Local-first RAG chat interface. Upload a PDF/Markdown document and ask questions about it. Answers are grounded strictly in the content you provide. Everything except the LLM inference call runs entirely on your machine.</p>
+            <p align="center">
+                <a href="https://github.com/PrathmeshKushwaha/Archvium-RAG"><b>View Repository</b></a>
+            </p>
+        </td>
+        <td width="50%">
+            <h3 align="center">🏥 ML models for Healthcare</h3>
+            <p align="center">
+                <img src="https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white" />
+                <img src="https://img.shields.io/badge/AWS_Lambda-FF9900?style=flat&logo=amazonaws&logoColor=white" />
+            </p>
+            <p>Predicts healthcare outcomes based on patient inputs. The model is deployed serverlessly using AWS Lambda and connected through an API Gateway. A simple frontend is also created to collect user inputs and display predictions in real-time.</p>
+            <p align="center">
+                <a href="https://github.com/PrathmeshKushwaha/ML-models-for-Healthcare"><b>View Repository</b></a>
+            </p>
+        </td>
+    </tr>
+</table>
 
 ---
 
