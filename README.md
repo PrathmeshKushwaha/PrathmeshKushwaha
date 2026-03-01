@@ -1,11 +1,7 @@
-# <div align="center">Hi, I'm Prathmesh Kushwaha 👋</div>
-
-<div align="center">
-    <img src="https://github-readme-stats.vercel.app/api?username=PrathmeshKushwaha&show_icons=true&theme=radical&hide=issues" alt="Prathmesh's GitHub Stats" />
-    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=PrathmeshKushwaha&layout=compact&theme=radical&langs_count=6" alt="Prathmesh's Top Languages" />
-</div>
+# <h1 align="center">Hi, I'm Prathmesh Kushwaha 👋</h1>
 
 <h3 align="center">Data Engineer | AI & ML Enthusiast</h3>
+
 <p align="center">
     Building robust data pipelines, monitoring production ML models, experimenting while understanding AI and leveraging analytics for actionable insights.
 </p>
@@ -21,7 +17,7 @@
 
 ---
 
-## <div align="center">📌 Pinned Projects</div>
+## 📌 Pinned Projects
 <p align="center">
     <a href="https://github.com/PrathmeshKushwaha/Archvium-RAG">
         <img src="https://github-readme-stats.vercel.app/api/pin/?username=PrathmeshKushwaha&repo=Archvium-RAG&theme=radical&hide_border=true" alt="Archvium-RAG">
@@ -33,25 +29,25 @@
 
 ---
 
-## 🚀 <div align="center">Current Focus</div>
+## 🚀 Current Focus
 * **[Model-Monitoring-Drift-Detection](https://github.com/PrathmeshKushwaha/Model-Monitoring-Drift-Detection)**: Developing a config-driven framework to detect feature-level data drift and schema anomalies in production environments.
 * **[Prototypes](https://github.com/PrathmeshKushwaha/Prototypes)**: This repository contains all the small projects that I make to test ideas and new technologies.
 
 ---
 
-## 🛠️ <div align="center">Tech Stack</div>
-<div align="center">
+## 🛠️ Tech Stack
+<p align="center">
     <img src="https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54" alt="Python">
     <img src="https://img.shields.io/badge/SQL-3670A0?style=for-the-badge&logo=mysql&logoColor=white" alt="SQL">
     <img src="https://img.shields.io/badge/azure-%230072C6.svg?style=for-the-badge&logo=azure&logoColor=white" alt="Azure">
     <img src="https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white" alt="Pandas">
     <img src="https://img.shields.io/badge/scikit--learn-%23F7931E.svg?style=for-the-badge&logo=scikit-learn&logoColor=white" alt="Scikit-Learn">
     <img src="https://img.shields.io/badge/MLflow-003366?style=for-the-badge&logo=mlflow&logoColor=white" alt="MLflow">
-</div>
+</p>
 
 ---
 
-## 📊 <div align="center">Skill Proficiency</div>
+## 📊 Skill Proficiency
 ```mermaid
 gantt
     title Skill Proficiency Overview
