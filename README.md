@@ -16,7 +16,7 @@ Building robust data pipelines, monitoring production ML models,experimenting wh
 
 ## 🚀 Current Focus
 * **[Model-Monitoring-Drift-Detection](https://github.com/PrathmeshKushwaha/Model-Monitoring-Drift-Detection)**: Developing a config-driven framework to detect feature-level data drift and schema anomalies in production environments.
-* **[Prototypes]**: This repository contains all the small projects that I make to test ideas and new technologies.
+* **[Prototypes](https://github.com/PrathmeshKushwaha/Prototypes)**: This repository contains all the small projects that I make to test ideas and new technologies.
 
 ---
 
