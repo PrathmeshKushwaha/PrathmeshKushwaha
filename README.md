@@ -17,13 +17,18 @@
 
 ---
 
-## 📌 Pinned Projects
+## <div align="center">📌 Pinned Projects</div>
 <p align="center">
     <a href="https://github.com/PrathmeshKushwaha/Archvium-RAG">
-        <img src="https://github-readme-stats.vercel.app/api/pin/?username=PrathmeshKushwaha&repo=Archvium-RAG&theme=radical&hide_border=true" alt="Archvium-RAG">
+        <img src="https://github-readme-stats.vercel.app/api/pin/?username=PrathmeshKushwaha&repo=Archvium-RAG&theme=radical&hide_border=true&include_all_commits=true" alt="Archvium-RAG Card">
     </a>
     <a href="https://github.com/PrathmeshKushwaha/ML-models-for-Healthcare">
-        <img src="https://github-readme-stats.vercel.app/api/pin/?username=PrathmeshKushwaha&repo=ML-models-for-Healthcare&theme=radical&hide_border=true" alt="ML-models-for-Healthcare">
+        <img src="https://github-readme-stats.vercel.app/api/pin/?username=PrathmeshKushwaha&repo=ML-models-for-Healthcare&theme=radical&hide_border=true&include_all_commits=true" alt="Healthcare Models Card">
+    </a>
+</p>
+<p align="center">
+    <a href="https://yourportfolio.com">
+        <img src="https://img.shields.io/badge/View_Full_Portfolio-1f222e?style=for-the-badge&logo=github&logoColor=white" alt="View Portfolio">
     </a>
 </p>
 
