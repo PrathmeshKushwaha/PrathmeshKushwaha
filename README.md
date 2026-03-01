@@ -1,7 +1,7 @@
 # Hi, I'm Prathmesh Kushwaha 👋
 
 ### Data Engineer | AI & ML Enthusiast
-[cite_start]Building robust data pipelines, monitoring production ML models, and leveraging analytics for actionable insights. [cite: 12, 24, 30]
+Building robust data pipelines, monitoring production ML models,experimenting while understanding AI and leveraging analytics for actionable insights.
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/prathmesh-kushwaha)
 [![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:prathmshkush@gmail.com)
