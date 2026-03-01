@@ -48,10 +48,33 @@
 
 ---
 
-## 🚀 Current Focus
-* **[Model-Monitoring-Drift-Detection](https://github.com/PrathmeshKushwaha/Model-Monitoring-Drift-Detection)**: Developing a config-driven framework to detect feature-level data drift and schema anomalies in production environments.
-* **[Prototypes](https://github.com/PrathmeshKushwaha/Prototypes)**: This repository contains all the small projects that I make to test ideas and new technologies.
+## <div align="center">🚀 Current Focus</div>
 
+<table>
+    <tr>
+        <td width="50%">
+            <h3 align="center">📊 ML Model Monitoring</h3>
+            <p align="center">
+                <img src="https://img.shields.io/badge/MLflow-003366?style=flat&logo=mlflow&logoColor=white" />
+                <img src="https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white" />
+            </p>
+            <p>Developing a config-driven framework to detect feature-level data drift and schema anomalies in production environments[cite: 24, 27].</p>
+            <p align="center">
+                <a href="https://github.com/PrathmeshKushwaha/Model-Monitoring-Drift-Detection"><b>View Repository</b></a>
+            </p>
+        </td>
+        <td width="50%">
+            <h3 align="center">💡 Project Prototypes</h3>
+            <p align="center">
+                <img src="https://img.shields.io/badge/Active-Development-brightgreen?style=flat" />
+            </p>
+            <p>A dedicated repository containing small projects, experimental code, and tests for new technologies to validate concepts rapidly.</p>
+            <p align="center">
+                <a href="https://github.com/PrathmeshKushwaha/Prototypes"><b>View Repository</b></a>
+            </p>
+        </td>
+    </tr>
+</table>
 ---
 
 ## 🛠️ Tech Stack
