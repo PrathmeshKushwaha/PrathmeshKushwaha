@@ -9,14 +9,14 @@
 ---
 
 ## 📌 Pinned Projects
-* **[Archvium-RAG](https://github.com/PrathmeshKushwaha/Archvium-RAG)**: [Briefly add what this RAG project does]
-* [cite_start]**[ML-models-for-Healthcare](https://github.com/PrathmeshKushwaha/ML-models-for-Healthcare)**: [Briefly add what this Healthcare project does, e.g., disease risk prediction] [cite: 30]
+* **[Archvium-RAG](https://github.com/PrathmeshKushwaha/Archvium-RAG)**: Local-first RAG (Retrieval-Augmented Generation) chat interface. Upload a PDF or Markdown document and ask questions about it. Answers are grounded strictly in the content you provide — the model cannot draw on outside knowledge. Everything except the LLM inference call runs entirely on your machine.
+* **[ML-models-for-Healthcare](https://github.com/PrathmeshKushwaha/ML-models-for-Healthcare)**: This project focuses on building a machine learning model that predicts healthcare outcomes based on patient inputs. The model is deployed serverlessly using AWS Lambda and connected through an API Gateway. A simple frontend is also created to collect user inputs and display predictions in real-time.
 
 ---
 
 ## 🚀 Current Focus
-* [cite_start]**[Model-Monitoring-Drift-Detection](https://github.com/PrathmeshKushwaha/Model-Monitoring-Drift-Detection)**: Developing a config-driven framework to detect feature-level data drift and schema anomalies in production environments. [cite: 24]
-* [Insert Next Project/Skill]: [Brief description of what you are building]
+* **[Model-Monitoring-Drift-Detection](https://github.com/PrathmeshKushwaha/Model-Monitoring-Drift-Detection)**: Developing a config-driven framework to detect feature-level data drift and schema anomalies in production environments.
+* **[Prototypes]**: This repository contains all the small projects that I make to test ideas and new technologies.
 
 ---
 
