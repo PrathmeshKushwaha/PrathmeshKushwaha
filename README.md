@@ -22,6 +22,7 @@
     <a href="https://github.com/PrathmeshKushwaha/Archvium-RAG">
         <img src="https://github-readme-stats.vercel.app/api/pin/?username=PrathmeshKushwaha&repo=Archvium-RAG&theme=radical&hide_border=true" alt="Archvium-RAG">
     </a>
+    <p>|</p>
     <a href="https://github.com/PrathmeshKushwaha/ML-models-for-Healthcare">
         <img src="https://github-readme-stats.vercel.app/api/pin/?username=PrathmeshKushwaha&repo=ML-models-for-Healthcare&theme=radical&hide_border=true" alt="ML-models-for-Healthcare">
     </a>
