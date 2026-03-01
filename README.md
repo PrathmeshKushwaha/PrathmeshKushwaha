@@ -1,16 +1,31 @@
-# Hi, I'm Prathmesh Kushwaha 👋
+# <h1 align="center">Hi, I'm Prathmesh Kushwaha 👋</h1>
 
-### Data Engineer | AI & ML Enthusiast
-Building robust data pipelines, monitoring production ML models,experimenting while understanding AI and leveraging analytics for actionable insights.
+<h3 align="center">Data Engineer | AI & ML Enthusiast</h3>
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/prathmesh-kushwaha)
-[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:prathmshkush@gmail.com)
+<p align="center">
+    Building robust data pipelines, monitoring production ML models, experimenting while understanding AI and leveraging analytics for actionable insights.
+</p>
+
+<p align="center">
+    <a href="https://linkedin.com/in/prathmesh-kushwaha">
+        <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn">
+    </a>
+    <a href="mailto:prathmshkush@gmail.com">
+        <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email">
+    </a>
+</p>
 
 ---
 
 ## 📌 Pinned Projects
-* **[Archvium-RAG](https://github.com/PrathmeshKushwaha/Archvium-RAG)**: Local-first RAG (Retrieval-Augmented Generation) chat interface. Upload a PDF or Markdown document and ask questions about it. Answers are grounded strictly in the content you provide — the model cannot draw on outside knowledge. Everything except the LLM inference call runs entirely on your machine.
-* **[ML-models-for-Healthcare](https://github.com/PrathmeshKushwaha/ML-models-for-Healthcare)**: This project focuses on building a machine learning model that predicts healthcare outcomes based on patient inputs. The model is deployed serverlessly using AWS Lambda and connected through an API Gateway. A simple frontend is also created to collect user inputs and display predictions in real-time.
+<p align="center">
+    <a href="https://github.com/PrathmeshKushwaha/Archvium-RAG">
+        <img src="https://github-readme-stats.vercel.app/api/pin/?username=PrathmeshKushwaha&repo=Archvium-RAG&theme=radical&hide_border=true" alt="Archvium-RAG">
+    </a>
+    <a href="https://github.com/PrathmeshKushwaha/ML-models-for-Healthcare">
+        <img src="https://github-readme-stats.vercel.app/api/pin/?username=PrathmeshKushwaha&repo=ML-models-for-Healthcare&theme=radical&hide_border=true" alt="ML-models-for-Healthcare">
+    </a>
+</p>
 
 ---
 
@@ -21,12 +36,14 @@ Building robust data pipelines, monitoring production ML models,experimenting wh
 ---
 
 ## 🛠️ Tech Stack
-![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
-![SQL](https://img.shields.io/badge/SQL-3670A0?style=for-the-badge&logo=mysql&logoColor=white)
-![Azure](https://img.shields.io/badge/azure-%230072C6.svg?style=for-the-badge&logo=azure&logoColor=white)
-![Pandas](https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white)
-![Scikit-Learn](https://img.shields.io/badge/scikit--learn-%23F7931E.svg?style=for-the-badge&logo=scikit-learn&logoColor=white)
-![MLflow](https://img.shields.io/badge/MLflow-003366?style=for-the-badge&logo=mlflow&logoColor=white)
+<p align="center">
+    <img src="https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54" alt="Python">
+    <img src="https://img.shields.io/badge/SQL-3670A0?style=for-the-badge&logo=mysql&logoColor=white" alt="SQL">
+    <img src="https://img.shields.io/badge/azure-%230072C6.svg?style=for-the-badge&logo=azure&logoColor=white" alt="Azure">
+    <img src="https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white" alt="Pandas">
+    <img src="https://img.shields.io/badge/scikit--learn-%23F7931E.svg?style=for-the-badge&logo=scikit-learn&logoColor=white" alt="Scikit-Learn">
+    <img src="https://img.shields.io/badge/MLflow-003366?style=for-the-badge&logo=mlflow&logoColor=white" alt="MLflow">
+</p>
 
 ---
 
