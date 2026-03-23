@@ -37,14 +37,14 @@
             </p>
         </td>
         <td width="50%">
-            <h3 align="center">🏥 ML models for Healthcare</h3>
+            <h3 align="center">PulseNotify-Notification Engine</h3>
             <p align="center">
                 <img src="https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white" />
                 <img src="https://img.shields.io/badge/AWS_Lambda-FF9900?style=flat&logo=amazonaws&logoColor=white" />
             </p>
-            <p>Predicts healthcare outcomes based on patient inputs. The model is deployed serverlessly using AWS Lambda and connected through an API Gateway. A simple frontend is also created to collect user inputs and display predictions in real-time.</p>
+            <p>Users (or your own services) send a notification event to the API. PulseNotify routes it to the right channel (email, WebSocket push, webhook), guarantees delivery with retries, tracks status, and parks failed messages in a dead-letter queue for inspection.</p>
             <p align="center">
-                <a href="https://github.com/PrathmeshKushwaha/ML-models-for-Healthcare"><b>View Repository</b></a>
+                <a href="https://github.com/PrathmeshKushwaha/Notification_Center"><b>View Repository</b></a>
             </p>
         </td>
     </tr>
