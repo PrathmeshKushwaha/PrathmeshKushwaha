@@ -40,7 +40,7 @@
             <h3 align="center">PulseNotify-Notification Engine</h3>
             <p align="center">
                 <img src="https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white" />
-                <img src="https://img.shields.io/badge/RabbitMQ" />
+                <img alt="Static Badge" src="https://img.shields.io/badge/RabbitMQ">
             </p>
             <p>Users (or your own services) send a notification event to the API. PulseNotify routes it to the right channel (email, WebSocket push, webhook), guarantees delivery with retries, tracks status, and parks failed messages in a dead-letter queue for inspection.</p>
             <p align="center">
